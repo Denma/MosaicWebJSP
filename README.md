@@ -74,7 +74,14 @@
 	->> (아래쪽 dependencies) compile group: 'org.springframework', name: 'springloaded', version: '1.2.6.RELEASE'
 	- Eclipse Output Directory 변경
 	- 	bin ==> build/classes/main
-	
+	- 개발자2는 Project -> Properties 에서 두가지 변경이 필요함
+	- 1. Project Pacets 
+	- >> Dynamic WebModule (version : 3.1)
+	- >> java(version : 1.8)
+	- >> javascript(version : 1.0)
+	- 2. Eclipse Output Directory 변경
+	- >> Java Build Path -> Source -> Default output folder
+	- >> bin ==> build/classes/main
 	
 	
 	
