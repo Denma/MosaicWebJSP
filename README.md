@@ -26,4 +26,10 @@
 		- >> git remote remove origin (remote제거)
 		- >> git remote add origin https://github.com/Denma/MosaicWeb.git
 		- >> git push -u origin master
+	- 개발자 2가 Clone 수행
+		- >> git clone https://github.com/Denma/MosaicWeb.git
+		- >> git clone https://github.com/Denma/MosaicWeb.git MosaicWebDev (MasaicWebDev폴더 생성 후 Clone)
+		- >> Eclipse Gradle Import		
+		
+		
 	
