@@ -48,10 +48,32 @@
 4. JSP 설정
 
 	- mvnrepository.com  >> search : tomcat jasper
-	- build.gradle dependency : compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '8.5.4'
+	- build.gradle dependency : providedRuntime group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '8.5.4'
+	- Eclipse -> Gradle Refresh
 	- notepad src/main/webapp/Hello.jsp
 	- gradle bootRun
 	- Firefox ==> http://localhost:8080/Hello.jsp
+	
+5. Servlet 설정	
+	
+	- MosaicWebApplication.java << @ServletComponentScan 추가
+	- com.hybrid.servlet.HelloServlet.java 생성
+	- Eclipse -> project -> Project Pacets 
+	- >> Dynamic WebModule (version : 3.1)
+	- >> java(version : 1.8)
+	- >> javascript(version : 1.0)
+	- gradle bootRun
+	- Firefox ==> http://localhost:8080/HelloServlet
+	
+6. Springloaded 설정 (리로드 기능)
+	
+	- Terminal에서 tree /f 으로 구조를 보면 HelloServlet.class가 두곳에 있는데 Eclipse가 저장하는 곳을 Gradle이 저장하는 곳과 맞춰준다.
+	- mvnrepository.com >> search : springloaded
+	- build.gradle에 설정 (두 곳)
+	->> (위쪽 dependencies) classpath("org.springframework:springloaded:1.2.6.RELEASE") 
+	->> (아래쪽 dependencies) compile group: 'org.springframework', name: 'springloaded', version: '1.2.6.RELEASE'
+	- Eclipse Output Directory 변경
+	- 	bin ==> build/classes/main
 	
 	
 	
