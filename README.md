@@ -30,6 +30,11 @@
 		- >> git clone https://github.com/Denma/MosaicWeb.git
 		- >> git clone https://github.com/Denma/MosaicWeb.git MosaicWebDev (MasaicWebDev폴더 생성 후 Clone)
 		- >> Eclipse Gradle Import		
-		
+	- 개발자 1(master)의 변경사항 저장
+		- >> git add .
+		- >> git status
+		- >> git git push
+	- 개발자 2가 변경사항 받아오기
+		- >> git pull
 		
 	
