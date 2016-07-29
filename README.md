@@ -83,5 +83,27 @@
 	- >> Java Build Path -> Source -> Default output folder
 	- >> bin ==> build/classes/main
 	
+7. Mybatis
+
+	- mvnrepository.com >> search : Mybatis Spring Boot Starter
+	- build.gradle의 Dependency에 설정
+	- >> compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.1.1'
+	- >> src/main/webapp/WEB-INF/lib에 ojdbc7.jar 가져오기
+	- >> compile files('src/main/webapp/WEB-INF/lib/ojdbc7.jar');
+	- application.properties
+	-	>>spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+	-	>>spring.datasource.url=jdbc:oracle:thin:@52.78.104.216:1521:orcl
+	-	>>spring.datasource.username=scott
+	-	>>spring.datasource.password=tiger
+	- Eclipse Gradle Refresh
+	- gradle bootRun
+	
+	- notepad src/main/java/com/hybrid/mapper/DeptMapper.java (인터페이스 생성)
+	- notepad src/main/java/com/hybrid/domain/Dept.java
+	- notepad src/test/java/com/hybrid/mapper/DeptMapperTest.java
+	- notepad src/main/webapp/dept.jsp	
+	
+	
+	
 	
 	
