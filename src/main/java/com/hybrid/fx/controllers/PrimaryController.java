@@ -53,7 +53,7 @@ public class PrimaryController {
         
         button.setOnAction(e -> viewManager.switchView("secondary"));
         
-        String homeAdress = "http://localhost:8080/index.html";
+        String homeAdress = "http://localhost:8080";
         url.setText(homeAdress);
         
         

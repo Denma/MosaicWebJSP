@@ -116,6 +116,11 @@
 	- 	>> spring stop + gloun stop
 	-	>> PrimaryView 에 WebView 추가
 	
-	
+10. SiteMesh 설정
+	- mvnrepository.com >> search : sitemesh
+	- build.gradle 의 dependencies에 추가
+		- >> compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.1'
+	- config 설정 -> SiteMeshFilterConfig.java ==> builder.addDecoratorPath("/deco", "/WEB-INF/deco/maindeco.jsp");
+		
 	
 	
