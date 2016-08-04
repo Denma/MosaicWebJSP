@@ -10,7 +10,5 @@
 <% for (int i=0; i<10; i++) {%>
 <h1>Hello.jsp 실행 확인됨 (i = <%=i %>)</h1>
 <%} %>
-<br>
-<a href="/index.jsp">홈으로</a>
 </body>
 </html>

@@ -4,13 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hello.jsp</title>
+<title>logout.jsp</title>
 </head>
 <body>
-<% for (int i=0; i<10; i++) {%>
-<h1>Hello.jsp 실행 확인됨 (i = <%=i %>)</h1>
-<%} %>
-<br>
-<a href="/index.jsp">홈으로</a>
+<%
+	session.invalidate();				//session 삭제 (변수값도 같이 삭제)
+	
+	response.sendRedirect("/");
+%>
+
 </body>
 </html>

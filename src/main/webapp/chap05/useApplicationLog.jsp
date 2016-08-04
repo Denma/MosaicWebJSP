@@ -13,5 +13,7 @@
 %>
 로그 메세지를 기록합니다.
 
+<br>
+<a href="/index.jsp">홈으로</a>
 </body>
 </html>

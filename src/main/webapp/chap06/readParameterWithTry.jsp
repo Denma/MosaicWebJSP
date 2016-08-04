@@ -15,5 +15,7 @@ name 파라미터 값:
 name 파라미터가 올바르지 않습니다.
 <%} %>
 
+<br>
+<a href="/index.jsp">홈으로</a>
 </body>
 </html>

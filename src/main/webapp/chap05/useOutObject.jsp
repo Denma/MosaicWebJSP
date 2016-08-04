@@ -16,6 +16,7 @@ out 기본 객체를 사용하여
 <%
 	out.println("출력한 결과입니다.");
 %>
-
+<br>
+<a href="/index.jsp">홈으로</a>
 </body>
 </html>

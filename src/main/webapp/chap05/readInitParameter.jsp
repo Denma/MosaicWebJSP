@@ -20,6 +20,8 @@
 	<%= application.getInitParameter(initParamName) %>
 	<%} %>
 </ul>
+<br>
+<a href="/index.jsp">홈으로</a>
 
 </body>
 </html>

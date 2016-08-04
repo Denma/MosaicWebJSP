@@ -13,5 +13,7 @@
 남은 크기 : <%= out.getRemaining() %> <br>
 Auto flush : <%= out.isAutoFlush() %><br>
 
+<br>
+<a href="/index.jsp">홈으로</a>
 </body>
 </html>

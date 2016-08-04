@@ -11,5 +11,7 @@
 
 name 파라미터 값 : <%= request.getParameter("name").toUpperCase() %>
 
+<br>
+<a href="/index.jsp">홈으로</a>
 </body>
 </html>

@@ -15,6 +15,16 @@
 <h1>Dept 테스트</h1>
 
 <%
+	String login = (String)session.getAttribute("LOGIN");
+
+	if (login == null) {
+		
+		response.sendRedirect("/session/loginForm.jsp");
+		return;
+	}
+%>
+
+<%
 	ApplicationContext ctx = WebApplicationContextUtils.getRequiredWebApplicationContext(this.getServletContext());
 	DeptMapper mapper = ctx.getBean(DeptMapper.class);
 	mapper.delete(65);
@@ -42,7 +52,8 @@
 		out.println(dept + "<br>");
 	}
 %>
-<br>
-<a href="/index.jsp">홈으로</a>
+
+<hr>
+<a href="/session/logout.jsp">로그아웃</a>
 </body>
 </html>

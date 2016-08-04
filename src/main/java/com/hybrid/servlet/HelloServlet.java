@@ -42,6 +42,8 @@ public class HelloServlet extends HttpServlet {
         out.println("<title>HelloServlet</title>");
         out.println("</head>");
         out.println("<body>");
+        out.println("<br>");
+        out.println("<a href=\"/index.jsp\">홈으로</a>");
         out.println("<h1>Method = " + request.getMethod()+"</h1>");
         out.println("<h1>Remote Addr = " + request.getRemoteAddr()+"</h1>");
         for (int i=0;i<10;i++) {

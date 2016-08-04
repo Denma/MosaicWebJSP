@@ -14,5 +14,7 @@ main.jsp에서 생성한 내용.
 
 include 이후의 내용.
 
+<br>
+<a href="/index.jsp">홈으로</a>
 </body>
 </html>

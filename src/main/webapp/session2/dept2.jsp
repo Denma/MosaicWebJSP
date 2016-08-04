@@ -1,18 +1,24 @@
 <%@page import="java.util.List"%>
 <%@page import="com.hybrid.domain.Dept"%>
+<%@page import="org.springframework.web.context.support.WebApplicationContextUtils"%>
 <%@page import="com.hybrid.mapper.DeptMapper"%>
 <%@page import="org.springframework.context.ApplicationContext"%>
-<%@page import="org.springframework.web.context.support.WebApplicationContextUtils"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>dept.jsp</title>
+<title>dept2.jsp</title>
 </head>
 <body>
-<h1>Dept 테스트</h1>
+<%
+	String login = (String)session.getAttribute("LOGIN");
+	if (login == null) {
+		response.sendRedirect("/session2/loginForm2.jsp");
+		return;
+	}
+%>
 
 <%
 	ApplicationContext ctx = WebApplicationContextUtils.getRequiredWebApplicationContext(this.getServletContext());
@@ -42,7 +48,9 @@
 		out.println(dept + "<br>");
 	}
 %>
-<br>
-<a href="/index.jsp">홈으로</a>
+
+<hr>
+<a href="/session/logout.jsp">로그아웃</a>
+
 </body>
 </html>

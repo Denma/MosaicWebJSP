@@ -31,5 +31,7 @@
 	</td>
 </tr>
 
+<br>
+<a href="/index.jsp">홈으로</a>
 </body>
 </html>

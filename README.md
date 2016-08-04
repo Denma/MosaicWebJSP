@@ -119,8 +119,15 @@
 10. SiteMesh 설정
 	- mvnrepository.com >> search : sitemesh
 	- build.gradle 의 dependencies에 추가
-		- >> compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.1'
+	-	>> compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.1'
 	- config 설정 -> SiteMeshFilterConfig.java ==> builder.addDecoratorPath("/deco", "/WEB-INF/deco/maindeco.jsp");
-		
+	
+11. Spring Security 설정
+	- mvnrepository.com >> search : spring boot security
+	- mvnrepository.com >> search : spring boot security taglibs
+	- build.gradle의 dependencies에 추가
+	-	>> compile('org.springframework.boot:spring-boot-starter-security')
+	-	>> compile group: 'org.springframework.security', name: 'spring-security-taglibs', version: '4.0.4.RELEASE'
+	
 	
 	
