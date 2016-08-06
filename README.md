@@ -104,11 +104,13 @@
 	- notepad src/main/webapp/dept.jsp	
 	
 8. Deploy 방법
+
 	- gradle war (MosaicWeb/build/libs/MosaicWebxxx.war 생성)
 	- MosaicWeb.war 를 C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps에 복사한다.
 	- Browser -> http://localhost/MosaicWeb.index.html
 	
 9. Gluon 설정
+
 	- FXTemplate/src를 MosaicWeb/src에 복사한다
 	- FXTemplate/build.gradle을 MosaicWeb/build.gradle에 통합시킨다. (build.gradle 내의 5~7번 세팅)
 	- com.hybrid.fx.MainApplication과 com.hybrid.MosaicWebApplication 통합 (init과 close를 같이하도록)
@@ -117,17 +119,25 @@
 	-	>> PrimaryView 에 WebView 추가
 	
 10. SiteMesh 설정
+
 	- mvnrepository.com >> search : sitemesh
 	- build.gradle 의 dependencies에 추가
 	-	>> compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.1'
 	- config 설정 -> SiteMeshFilterConfig.java ==> builder.addDecoratorPath("/deco", "/WEB-INF/deco/maindeco.jsp");
 	
 11. Spring Security 설정
+
 	- mvnrepository.com >> search : spring boot security
 	- mvnrepository.com >> search : spring boot security taglibs
 	- build.gradle의 dependencies에 추가
 	-	>> compile('org.springframework.boot:spring-boot-starter-security')
 	-	>> compile group: 'org.springframework.security', name: 'spring-security-taglibs', version: '4.0.4.RELEASE'
+	
+12. JSTL 설정 
+
+	- mvnrepository.com
+	- build.gradle의 dependencies에 추가
+	-	>> compile group: 'javax.servlet', name: 'jstl', version: '1.2'
 	
 	
 	

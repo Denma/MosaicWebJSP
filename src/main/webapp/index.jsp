@@ -9,7 +9,7 @@
 <body>
 <h1>실행 확인</h1>
 <hr>
-<ol>
+<ul>
 	<li><a href="Hello.html">HTML 실행 확인</a></li>
 	<li><a href="Hello.jsp">JSP 실행 확인</a></li>
 	<li><a href="HelloServlet">Servlet 실행 확인</a></li>
@@ -33,12 +33,19 @@
 	<li>===========8장 실습=============</li>
 	<li><a href="chap08/makeObject.jsp">jsp:useBean으로 객체만들기</a></li>
 	<li><a href="chap08/membershipForm.jsp">jsp:useBean사용하여 회원가입하기</a></li>
-	<li>===========9장 실습=============</li>
+	<li>===========9장,10장 실습=============</li>
 	<li><a href="cookie/dept.jsp">Cookie Login</a></li>
 	<li><a href="session/dept.jsp">Session Login</a></li>
 	<li><a href="session2/dept2.jsp">Session Login(복습)</a></li>
 	<li><a href="logout.jsp">Logout 화면</a></li>
-</ol>
+	<li>===========11장 실습=============</li>
+	<li><a href="chap11/el.jsp">EL 사용(소스 참조)</a></li>
+	<li><a href="chap11/requestScope.jsp">EL - requestScope 사용</a></li>
+	<li><a href="chap11/requestParam.jsp">EL - param,paramValues 사용</a></li>
+	<li><a href="chap11/requestHeader.jsp">EL - header,headerValues 사용</a></li>
+	<li><a href="chap11/initParam.jsp">EL - initParam 사용</a></li>
+	
+</ul>
 
 </body>
 </html>
